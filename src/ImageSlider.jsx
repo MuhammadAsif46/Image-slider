@@ -14,7 +14,7 @@ const imageStyle = {
   width: "100%",
   height: "500px",
   objectFit: "cover",
-  marginTop: "3%",
+  // marginTop: "3%",
 };
 
 const images = [
@@ -30,7 +30,7 @@ const images = [
 
 const ImageSlider = () => (
   <div>
-    <h1 className="p-4 text-3xl bg-gray-300 text-slate-700 shadow-xl ">Image Slider</h1>
+    <h1 className="p-4 text-3xl bg-gray-300 text-slate-700 shadow-xl mb-2">Image Slider</h1>
     <Carousel autoplay dots={false}>
       {images.map((img, idx) => ( 
         <div key={idx}>{img.image}</div>
